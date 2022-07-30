@@ -2,12 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 20px;
 }
 .nav-con{
     /* border: 2px solid blue; */
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.btn-group{
+    /* border: 2px solid blue; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: space-between;
     margin: 2rem 0;
 }
  .d-flex{
@@ -22,8 +33,8 @@ display: flex;
     padding-top: 1rem!important;
     padding-bottom: 1rem!important;
 }
-.mb-4 {
-    margin-bottom: 1.5rem!important;
+.mb-3 {
+    margin-bottom: 0.75rem!important;
 }
 .align-items-center {
     align-items: center!important;
@@ -36,7 +47,9 @@ display: flex;
 .text-center{
     text-align: center;
 }
-
+.text-end{
+    text-align: end;
+}
 
 .container-fluid{
     width: 100%;
@@ -86,13 +99,13 @@ button, input {
 }
 
 .form-control {
-    margin: 1.5rem 0 ;
+    margin: 0.5rem 0 ;
     display: block;
     position: relative;
     width: 100%;
     padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 400;
+    /* font-size: 1rem; */
+    /* font-weight: 400; */
     line-height: 1.5;
     color: #212529;
     background-color: #fff;
@@ -104,6 +117,10 @@ button, input {
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
+label{
+font-size: 20px;
+font-weight: 600;
+}
 
 .style-none{
     list-style-type: none;
@@ -134,6 +151,9 @@ font-weight: 600;
 }
 .btn-primary{
     background-color: hsl(194deg 99% 47%) ;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
  
 }
 ul {
@@ -148,9 +168,130 @@ ul {
     text-decoration: none;
     vertical-align: middle;
     cursor: pointer;
-    border: 1px solid transparent;
+    /* border: 1px solid transparent; */
     padding: 0.375rem 0.75rem;
     border-radius: 0.25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 } 
+.col-6{
 
+    width: 50%;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+.link{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.bg-light {
+    opacity: 1;
+    background-color: #fff!important;
+}
+.text-primary {
+    opacity: 1;
+    color: hsl(194deg 99% 47%) !important;
+}
+
+.btn-outline-primary 
+{
+    /* outline-style: solid; */
+    background-color:hsl(194deg 99% 47%);
+    color:#fff ;
+    /* border: 2px solid hsl(194deg 99% 47%); */
+}
+.btn-outline-none{
+    background-color: #f8f9fa;
+    border: none;
+    outline: none; 
+}
+.btn-light {
+    color:  hsl(194deg 99% 47%);
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+.me-2 {
+    margin-right: 0.5rem!important;
+}
+
+.s-btn{
+    background-color:  hsl(194deg 99% 47%);
+    padding: 1rem 1rem;
+    outline: none;
+    font-weight: 600;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 2px solid  hsl(194deg 99% 47%);
+}
+.l-btn{
+    background-color:  #fff;
+    padding: 1rem 1.5rem;
+    outline: none;
+    font-weight: 600;
+    color:hsl(194deg 99% 47%);
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+   
+}
+
+.g-btn{
+    position: relative;
+    background-color:  #fff;
+    padding: 1rem 1.5rem;
+    outline: none;
+    font-weight: 600;
+    color:hsl(194deg 99% 47%);
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    outline-style: solid;
+    outline-width: 1px;
+}
+
+.git-btn{
+    background-color:  #fff;
+    padding: 1rem 1.5rem;
+    outline: none !important;
+    font-weight: 600;
+    border: 0px solid red;
+    color:hsl(194deg 99% 47%);
+    font-size: 20px;
+    /* outline-style: none !important; */
+
+
+}
+.g-btn-text{
+    position: absolute;
+    top: 9px ;
+    right: 40px;
+
+    /* margin-top: 1rem; */
+    /* marging-top: 2rem; */
+}
+.g-icon{
+    position: absolute;
+    top: 6px;
+    left: 74px;
+}
+
+ .en{
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+font-size: 30px;
+}
+
+.icon{
+    padding: 2px 3px;
+}

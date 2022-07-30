@@ -20,8 +20,8 @@
         
     
           <div class="col-md-3 text-end">
-            <button type="button" class="btn btn-outline-primary me-2">Login</button>
-            <button type="button" class="btn btn-primary">Sign-up</button>
+            <button type="button" class="l-btn me-2 "><img src="images/world.png" width="30" alt="" srcset=""> <span class="en">EN</span>     </button>
+            <button type="button" class="s-btn  ">Sign-up</button>
           </div>
         </div>
       </div>
@@ -32,26 +32,32 @@
                 <h2  class="text-center">Sign-in</h2>
                 <form action="" class="from">
                     <div class="form-group mb-3">
-                        <label for="" class="form-label">Email</label>
+                        <label for="" class="">Email</label>
                         <input type="email" name="email" id=""  class="form-control">
                     </div>
 
                     <div class="form-group mb-3">
-                        <label for="" class="form-label">Password</label>
-                        <input type="password" name="email" id=""  class="form-control">
+                        <label for="" class="">Password</label>
+                        <input type="password"  name="email" id="password"  class="form-control">
+                        <span class="eye" onclick="myFunction()">
+                            <i id="hide1" class="fa fa-eye"></i>
+                            <i id="hide2" class="fa fa-eye-slash"></i>
+                         </span>
                     </div>
 
                     <div class="form-group">
-                        <input type="input" name="submit" id="" value="Sign" class="btn btn-primary form-control">
+                        <input type="input" name="submit" id="" value="Sign In" class="btn btn-primary form-control">
                     </div>
                 </form>
 
-                <p class="text-end mt-3"><a href="">Forget Your Password ?</a></p>
+                <p class="text-end mt-3 mb-3"><a href=""  class="link">Forget Your Password ?</a></p>
                 <p class="text-center">or Sign in with:</p>
 
                 <div class="btn-group d-flex flex-column "> 
-                 <button type="button" class="btn-outline-primary bg-light text-primary btn btn-light  text-center">Sign in with Google</button> <br>
-                  <button type="button" class="btn-outline-none  text-primary btn btn-light ">Sign in with Git Hub</button>
+                 <!-- <button type="button" class="g-btn"> <img src="images/google.svg" class="g-icon" width="32px" alt="">  <span class="g-btn-text">Sign in with Google</span> </button> <br> -->
+                  
+                 <button type="button" class="g-btn"> <img src="images/google.svg" class="icon" width="25px" alt=""> <span class="btn-text">Sign in with Google </span></button>
+                 <button type="button" class="git-btn"> <img src="images/github.svg" class="icon" width="25px" alt=""> <span class="btn-text">Sign in with Git Hub </span></button>
 
                 </div>
                   
@@ -71,5 +77,24 @@
        
         </div>
     </div> -->
+
+<script>
+    function myFunction() {
+  var x = document.getElementById('myInput');
+  var y = document.getElementById('hide1');
+  var z = document.getElementById('hide2');
+
+  if (x.type === 'password') {
+    x.type = 'text'
+    y.style.display = 'block';
+    z.style.display = 'none'
+  }
+  else {
+    x.type = 'password'
+    y.style.display = 'none';
+    z.style.display = 'block'
+  }
+}
+</script>
 </body>
 </html>
