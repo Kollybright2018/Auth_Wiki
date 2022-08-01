@@ -247,6 +247,7 @@ ul {
 }
 
 .g-btn{
+    text-align: center;
     position: relative;
     background-color:  #fff;
     padding: 1rem 1.5rem;
@@ -259,8 +260,13 @@ ul {
     outline-style: solid;
     outline-width: 1px;
 }
-
+.l-link{
+    color:hsl(194deg 99% 47%);
+    font-weight: 900;
+    font-size: 20px;
+}
 .git-btn{
+    text-align: center;
     background-color:  #fff;
     padding: 1rem 1.5rem;
     outline: none !important;
@@ -276,11 +282,13 @@ ul {
     position: absolute;
     top: 9px ;
     right: 40px;
+    text-align: center;
 
     /* margin-top: 1rem; */
     /* marging-top: 2rem; */
 }
 .g-icon{
+    text-align: center;
     position: absolute;
     top: 6px;
     left: 74px;
@@ -294,4 +302,68 @@ font-size: 30px;
 
 .icon{
     padding: 2px 3px;
+}
+
+#hideLinks{
+display: none;
+}
+.ham{
+    display: none;
+}
+@media  screen and (max-width:655px) {
+
+  .show-link  #en{
+        display: none;
+    }
+   .show-link #sn{
+        display: none;
+    }
+    .nav-con .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+.links #en, #sn{
+    display: block;
+}
+.hide-links #sn{
+    margin-left: 1rem;
+}
+/* .hide-links{
+    display: none;
+    flex-direction: column;
+} */
+.hide-links  .en{
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+font-size: 30px;
+}
+
+.hide-links .l-btn{
+    background-color:  #fff;
+    /* padding: 1rem ; */
+    padding-left: 0;
+    outline: none;
+    font-weight: 600;
+    color:hsl(194deg 99% 47%);
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+   
+}
+.s-btn{
+    background-color:  hsl(194deg 99% 47%);
+    padding: .75rem .55rem;
+    outline: none;
+    font-weight: 600;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    border: 2px solid  hsl(194deg 99% 47%);
+}
+.ham{
+    display: block;
+}
 }

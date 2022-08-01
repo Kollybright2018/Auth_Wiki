@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
  
     <title>Welcome Auth-Wiki || Login Page</title>
 </head>
@@ -12,16 +13,28 @@
 
     <div class="container">
         <div class="nav-con">
-          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+
+          <div class="left-nav">
+         <a href="/"  class="d-flex align-items-center links col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
            <img src="images/logo.png" width="200" alt="" srcset="">
+         </a>
+
+           <div class="hide-links" id="hideLinks">
+             <button type="button" id="en" class="l-btn me-2 "><img src="images/world.png" width="30" alt="" srcset=""> <span class="en">EN</span>     </button>
+           <a class="s-btn link" id="sn" href="#">Sign-up</a> 
+           </div>
+          </div>
+        
+          
             <!-- <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg> -->
-          </a>
+         
     
         
     
-          <div class="col-md-3 text-end">
-            <button type="button" class="l-btn me-2 "><img src="images/world.png" width="30" alt="" srcset=""> <span class="en">EN</span>     </button>
-            <button type="button" class="s-btn  ">Sign-up</button>
+          <div class="col-md-3 text-end show-link">
+            <button type="button" id="en" class="l-btn me-2 "><img src="images/world.png" width="30" alt="" srcset=""> <span class="en">EN</span>     </button>
+           <a class="s-btn link" id="sn" href="#">Sign-up</a> 
+           <a href="javascript:void(0);"   id="ham" class="ham"> <i class="fa fa-bars" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>
@@ -46,7 +59,7 @@
                     </div>
 
                     <div class="form-group">
-                        <input type="input" name="submit" id="" value="Sign In" class="btn btn-primary form-control">
+                        <input type="submit" name="sign-in" id="" value="Sign In" class="btn btn-primary form-control">
                     </div>
                 </form>
 
@@ -56,8 +69,8 @@
                 <div class="btn-group d-flex flex-column "> 
                  <!-- <button type="button" class="g-btn"> <img src="images/google.svg" class="g-icon" width="32px" alt="">  <span class="g-btn-text">Sign in with Google</span> </button> <br> -->
                   
-                 <button type="button" class="g-btn"> <img src="images/google.svg" class="icon" width="25px" alt=""> <span class="btn-text">Sign in with Google </span></button>
-                 <button type="button" class="git-btn"> <img src="images/github.svg" class="icon" width="25px" alt=""> <span class="btn-text">Sign in with Git Hub </span></button>
+                 <button type="button" class="g-btn"> <img src="images/google.svg" class="icon" width="25px" alt=""> <a href="#" class="l-link link">Sign in with Google </a> </button>
+                 <button type="button" class="git-btn"> <img src="images/github.svg" class="icon" width="25px" alt="">  <a href="#" class="l-link link">Sign in with Git Hub </a></button>
 
                 </div>
                   
@@ -79,6 +92,30 @@
     </div> -->
 
 <script>
+  var ham = document.getElementById('ham');
+  var hideLinks= document.getElementById('hideLinks');
+  hideLinks.style.display=="none"
+ham.onclick = ()=>{
+  hideLinks.style.display=="none"
+  console.log(hideLinks.style.display);
+  // if (hideLinks.style.display==="none") {
+  //   hideLinks.style.display=="flex"
+  // }
+  
+  // if (hideLinks.style.display=="flex") {
+  //   hideLinks.style.display=="none"
+  // } 
+}
+  function ham(){
+    // var ham = document.getElementById('ham');
+    var hideLinks= document.getElementById('hideLinks');
+if (hideLinks.style.display=='flex') {
+  hideLinks.style.display=='none';
+} else {
+  hideLinks.style.display=='flex';
+}
+
+  }
     function myFunction() {
   var x = document.getElementById('myInput');
   var y = document.getElementById('hide1');
